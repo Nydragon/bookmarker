@@ -58,7 +58,7 @@ fn write_selection(selection: &Record) {
     use enigo::KeyboardControllable;
 
     let mut enigo: Enigo = Enigo::new();
-
+    enigo.set_delay(0);
     enigo.key_sequence_parse(&selection.content);
 }
 
